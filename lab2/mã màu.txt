@@ -1,0 +1,3 @@
+Mã màu menu: #c1080f
+Mã màu footer, tên danh mục: #272f54
+Mã màu border: #cdcdcd

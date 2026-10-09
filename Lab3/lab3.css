@@ -1,0 +1,407 @@
+/* CÀI ĐẶT CHUNG */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e95b13;
+}
+
+.website {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner a,
+.banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* MENU */
+.menu {
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    background-color: #f16721;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.menu > a {
+    display: block;
+    padding: 6px 12px;
+    white-space: nowrap;
+}
+
+.menu > a:hover {
+    background-color: #386d08;
+    color: #fff;
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    margin: 3px 5px 3px auto;
+}
+
+.search input {
+    width: 170px;
+    min-width: 0;
+    padding: 4px 7px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+}
+
+.search button {
+    padding: 4px 8px;
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.search button:hover {
+    background-color: #111;
+}
+
+/* BỐ CỤC HAI CỘT */
+.main-layout {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: stretch;
+}
+
+.sidebar,
+.content {
+    border: 3px solid #ccc;
+    min-width: 0;
+}
+
+/* CỘT DANH MỤC */
+.sidebar h3 {
+    padding: 7px 15px;
+    color: #386d08;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 1px solid #386d08;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 10px 15px 20px;
+}
+
+.sidebar ul:last-of-type {
+    border-bottom: 3px solid #386d08;
+}
+
+.sidebar li {
+    padding: 4px 0;
+    color: #386d08;
+}
+
+.sidebar li:nth-child(1) a {
+    color: #f16721;
+}
+
+.sidebar li:nth-child(2) a {
+    color: #386d08;
+}
+
+.sidebar li:nth-child(3) a {
+    color: #f16721;
+}
+
+.sidebar ul:last-of-type li:nth-child(1) a {
+    color: #f16721;
+}
+
+.sidebar ul:last-of-type li:nth-child(2) a {
+    color: #386d08;
+}
+
+.sidebar ul:last-of-type li:nth-child(3) a {
+    color: #f16721;
+}
+
+.sidebar ul:last-of-type li:nth-child(4) a {
+    color: #f16721;
+}
+
+.sidebar li::before {
+    content: "";
+    color: #f16721;
+    font-size: 9px;
+    margin-right: 7px;
+}
+
+.sidebar li a:hover {
+    color: #f16721;
+}
+
+/* CỘT NỘI DUNG */
+.content {
+    padding: 0 12px 20px;
+}
+
+.content section h2 {
+    padding: 7px 5px;
+    color: #386d08;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #386d08;
+}
+
+/* BẢNG GIÁ */
+.price-section table {
+    width: 100%;
+    margin-top: 8px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.price-section th,
+.price-section td {
+    border: 3px solid #386d08;
+    padding: 3px 6px;
+    text-align: left;
+}
+
+.price-section th {
+    background-color: #f16721;
+    color: #fff;
+    text-align: center;
+}
+
+.price-section tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.price-section td a:hover {
+    color: #f16721;
+}
+
+.discount {
+    font-weight: bold;
+}
+
+.price-section tfoot td {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+.price-note {
+    margin: 8px 0 35px;
+    text-align: right;
+    color: #386d08;
+}
+
+/* TIN TỨC */
+.news-section {
+    margin-top: 45px;
+}
+
+.news-item {
+    display: flex;
+    gap: 15px;
+    margin: 18px 0 25px;
+    align-items: flex-start;
+}
+
+.news-item > a {
+    display: block;
+    flex: 0 0 130px;
+}
+
+.news-item img {
+    display: block;
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.news-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.news-text h3 {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #386d08;
+}
+
+.news-text p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 7px;
+    color: #f16721;
+}
+
+/* CHÂN TRANG */
+.footer {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #386d08;
+    color: #fff;
+    text-align: center;
+}
+
+.footer > a:first-child {
+    display: block;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a:hover {
+    color: #ffe5b4;
+}
+
+/* TRANG BẢNG GIÁ */
+.price-page,
+.contact-page {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.price-page > p,
+.contact-page > p {
+    margin: 12px 0 20px;
+}
+
+.price-page table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.price-page th,
+.price-page td {
+    border: 1px solid #386d08;
+    padding: 8px;
+    text-align: center;
+}
+
+.price-page th {
+    background-color: #ed5b0b;
+    color: #fff;
+}
+
+.price-page tfoot td {
+    color: #386d08;
+    font-style: italic;
+}
+
+.price-page .discount {
+    color: #d93025;
+    font-weight: bold;
+}
+
+/* TRANG LIÊN HỆ */
+.contact-information {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.contact-information h3 {
+    margin-bottom: 10px;
+    color: #386d08;
+}
+
+.contact-information p {
+    margin: 7px 0;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #386d08;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 1px solid #386d08;
+}
+
+.form-button {
+    padding: 10px 20px;
+    border: 0;
+    background-color: #f16721;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #386d08;
+}
+
+

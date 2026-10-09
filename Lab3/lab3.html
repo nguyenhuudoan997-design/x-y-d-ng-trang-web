@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Cây Theo Mùa</title>
+    <link rel="stylesheet" href="/Lab3/lab3.css">
+</head>
+<body>
+    <div class="website">
+        <!-- BANNER -->
+        <header class="banner">
+            <a href="index.html" title="Về trang chủ">
+                <img src="/Lab3/image/banner.png" alt="Trái cây theo mùa">
+            </a>
+        </header>
+        <!-- THANH MENU -->
+        <nav class="menu">
+            <a href="lab3.html">TRANG CHỦ</a>
+            <a href="gioi-thieu.html">GIỚI THIỆU</a>
+            <a href="hoa-qua.html">HOA QUẢ</a>
+            <a href="bang-gia.html">GIÁ HOA QUẢ</a>
+            <a href="lien-he.html">LIÊN HỆ</a>
+
+            <form action="hoa-qua.html" method="get" class="search">
+                <input
+                    type="search"
+                    name="tu-khoa"
+                    placeholder="Tìm kiếm hoa quả..."
+                    aria-label="Tìm kiếm hoa quả"
+                >
+                <button type="submit">TÌM KIẾM</button>
+            </form>
+        </nav>
+        <!-- NỘI DUNG CHÍNH -->
+        <main class="main-layout">
+            <!-- CỘT DANH MỤC -->
+            <aside class="sidebar">
+                <h3>HOA QUẢ VIỆT</h3>
+                <ul>
+                    <li>
+                        <img src="/Lab3/image/lavang.png">
+                        <a href="danh-muc.html?mien=bac">Đặc sản miền Bắc</a></li>
+                    <li>
+                        <img src="/Lab3/image/laxanh.png">
+                        <a href="danh-muc.html?mien=trung">Đặc sản miền Trung</a></li>
+                    <li>
+                        <img src="/Lab3/image/lavang.png">
+                        <a href="danh-muc.html?mien=nam">Đặc sản miền Nam</a></li>
+                </ul>
+                <h3>HOA QUẢ NHẬP KHẨU</h3>
+                <ul>
+                    <li>
+                        <img src="/Lab3/image/lavang.png">
+                        <a href="danh-muc.html?nuoc=my">Hoa quả Mỹ</a></li>
+                    <li>
+                        <img src="/Lab3/image/laxanh.png">
+                        <a href="danh-muc.html?nuoc=uc">Hoa quả Úc</a></li>
+                    <li>
+                        <img src="/Lab3/image/lavang.png">
+                        <a href="danh-muc.html?nuoc=chau-au">Hoa quả Châu Âu</a></li>
+                    <li>
+                        <img src="/Lab3/image/lavang.png">
+                        <a href="danh-muc.html?nuoc=china">Hoa quả Trung Quốc</a></li>
+                </ul>
+            </aside>
+            <!-- CỘT NỘI DUNG -->
+            <div class="content">
+                <!-- BẢNG GIÁ -->
+                <section class="price-section" id="bang-gia">
+                    <h2>BẢNG GIÁ HOA QUẢ THÁNG 10</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá ban đầu</th>
+                                <th>Giảm giá</th>
+                                <th>Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=nho-den">Nho đen không hạt</a></td>
+                                <td>240.000 đ</td>
+                                <td class="discount">150.000 đ</td>
+                                <td>Chỉ còn 10 kg nho</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=cherry">Cherry</a></td>
+                                <td>440.000 đ</td>
+                                <td class="discount">350.000 đ</td>
+                                <td>Size 100</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=quyt-uc">Quýt Úc Size 110</a></td>
+                                <td>120.000 đ</td>
+                                <td class="discount">100.000 đ</td>
+                                <td>Chỉ còn 10 kg quýt Úc</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=nho-do">Nho đỏ không hạt</a></td>
+                                <td>240.000 đ</td>
+                                <td class="discount">150.000 đ</td>
+                                <td>Hàng đang giảm giá</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=dua-hau">Dưa hấu không hạt</a></td>
+                                <td>140.000 đ</td>
+                                <td class="discount">80.000 đ</td>
+                                <td rowspan="3">Mua từ 3kg giảm thêm 5%</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=quyt-uc">Quýt Úc</a></td>
+                                <td>120.000 đ</td>
+                                <td class="discount">100.000 đ</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="chi-tiet-san-pham.html?san-pham=tao-jazz">Táo Jazz</a></td>
+                                <td>150.000 đ</td>
+                                <td class="discount">99.000 đ</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Các sản phẩm đều được freeship</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p class="price-note">
+                        <a href="bang-gia.html">Xem bảng giá đầy đủ</a>
+                    </p>
+                </section>
+                <!-- TIN TỨC -->
+                <section class="news-section" id="tin-tuc">
+                    <h2>TIN TỨC MỚI NHẤT</h2>
+                    <article class="news-item">
+                        <a href="chi-tiet-tin-tuc.html?bai-viet=cherry">
+                            <img src="/Lab3/image/sp1.png" alt="Cherry vàng">
+                        </a>
+                        <div class="news-text">
+                            <h3>
+                                <a href="chi-tiet-tin-tuc.html?bai-viet=cherry">
+                                    CHERRY VÀNG MỸ - TRÁI CÂY THƯỢNG HẠNG,<br>
+                                    SANG TRỌNG VÀ CỰC KỲ QUÝ HIẾM.
+                                </a>
+                            </h3>
+                            <p>
+                                Cherry là loại trái cây được nhiều người
+                                yêu thích bởi hương vị thơm ngon. Tìm hiểu
+                                thêm về cách chọn và bảo quản cherry.
+                            </p>
+                            <a class="read-more"
+                               href="chi-tiet-tin-tuc.html?bai-viet=cherry">
+                                Đọc tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <a href="chi-tiet-tin-tuc.html?bai-viet=tao">
+                            <img src="/Lab3/image/sp2.png" alt="Táo đỏ">
+                        </a>
+                        <div class="news-text">
+                            <h3>
+                                <a href="chi-tiet-tin-tuc.html?bai-viet=tao">
+                                    TÁO NỮ HOÀNG Ở NEW ZEALAND HẢO HẠNG.
+                                </a>
+                            </h3>
+                            <p>
+                                Một số mẹo đơn giản giúp bạn lựa chọn
+                                những quả táo tươi ngon và bảo quản
+                                trái cây đúng cách tại nhà.
+                            </p>
+                            <a class="read-more"
+                               href="chi-tiet-tin-tuc.html?bai-viet=tao">
+                                Đọc tiếp →
+                            </a>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- CHÂN TRANG -->
+        <footer class="footer">
+            <a href="lab3.html">TRÁI CÂY THEO MÙA</a>
+            <p>NGUYỄN HỮU ĐOÀN - PH65018</p>
+            <a href="lien-he.html">Thông tin liên hệ</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+

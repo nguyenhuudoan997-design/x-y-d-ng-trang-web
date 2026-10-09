@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa quả - Trái Cây Theo Mùa</title>
+    <link rel="stylesheet" href="/Lab3/lab3.css">
+</head>
+<body>
+
+<div class="website">
+
+    <!-- BANNER -->
+    <header class="banner">
+        <a href="lab3.html">
+            <img src="/Lab3/image/banner.png" alt="Trái cây theo mùa">
+        </a>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="lab3.html">TRANG CHỦ</a>
+        <a href="gioi-thieu.html">GIỚI THIỆU</a>
+        <a href="hoa-qua.html">HOA QUẢ</a>
+        <a href="bang-gia.html">GIÁ HOA QUẢ</a>
+        <a href="lien-he.html">LIÊN HỆ</a>
+
+        <form action="hoa-qua.html" method="get" class="search">
+            <input type="search" name="tu-khoa"
+                   placeholder="Tìm kiếm hoa quả..."
+                   aria-label="Tìm kiếm hoa quả">
+            <button type="submit">TÌM KIẾM</button>
+        </form>
+    </nav>
+
+    <main class="main-layout">
+
+        <!-- DANH MỤC -->
+        <aside class="sidebar">
+            <h3>HOA QUẢ VIỆT</h3>
+            <ul>
+                <li><a href="hoa-qua.html#mien-bac">Đặc sản miền Bắc</a></li>
+                <li><a href="hoa-qua.html#mien-trung">Đặc sản miền Trung</a></li>
+                <li><a href="hoa-qua.html#mien-nam">Đặc sản miền Nam</a></li>
+            </ul>
+
+            <h3>HOA QUẢ NHẬP KHẨU</h3>
+            <ul>
+                <li><a href="hoa-qua.html#hoa-qua-my">Hoa quả Mỹ</a></li>
+                <li><a href="hoa-qua.html#hoa-qua-uc">Hoa quả Úc</a></li>
+                <li><a href="hoa-qua.html#hoa-qua-chau-au">Hoa quả Châu Âu</a></li>
+            </ul>
+        </aside>
+
+        <!-- DANH SÁCH HOA QUẢ -->
+        <div class="content">
+
+            <section id="mien-bac">
+                <h2>ĐẶC SẢN MIỀN BẮC</h2>
+
+                <div class="products">
+                    <article class="product-item">
+                        <img src="/Lab3/image/sp2.png" alt="Táo đỏ">
+                        <h3><a href="chi-tiet-san-pham.html?san-pham=tao-do">Táo đỏ</a></h3>
+                        <p>Giá tham khảo: 99.000 đ/kg</p>
+                        <a href="chi-tiet-san-pham.html?san-pham=tao-do">XEM CHI TIẾT</a>
+                    </article>
+
+                    <article class="product-item">
+                        <img src="images/tao-do.jpg" alt="Lê tươi">
+                        <h3><a href="chi-tiet-san-pham.html?san-pham=le-tuoi">Lê tươi</a></h3>
+                        <p>Giá tham khảo: 85.000 đ/kg</p>
+                        <a href="chi-tiet-san-pham.html?san-pham=le-tuoi">XEM CHI TIẾT</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="mien-trung">
+                <h2>ĐẶC SẢN MIỀN TRUNG</h2>
+                <p>Khám phá các loại trái cây đặc sản miền Trung.</p>
+                <ul>
+                    <li><a href="chi-tiet-san-pham.html?san-pham=thanh-long">Thanh long</a></li>
+                    <li><a href="chi-tiet-san-pham.html?san-pham=dua">Dứa tươi</a></li>
+                </ul>
+            </section>
+
+            <section id="mien-nam">
+                <h2>ĐẶC SẢN MIỀN NAM</h2>
+                <p>Những loại trái cây nhiệt đới thơm ngon.</p>
+                <ul>
+                    <li><a href="chi-tiet-san-pham.html?san-pham=xoaicat">Xoài cát</a></li>
+                    <li><a href="chi-tiet-san-pham.html?san-pham=sau-rieng">Sầu riêng</a></li>
+                </ul>
+            </section>
+
+            <section id="hoa-qua-my">
+                <h2>HOA QUẢ MỸ</h2>
+                <p><a href="chi-tiet-san-pham.html?san-pham=cherry">Cherry Mỹ</a> ·
+                   <a href="chi-tiet-san-pham.html?san-pham=nho-den">Nho đen không hạt</a></p>
+            </section>
+
+            <section id="hoa-qua-uc">
+                <h2>HOA QUẢ ÚC</h2>
+                <p><a href="chi-tiet-san-pham.html?san-pham=quyt-uc">Quýt Úc</a></p>
+            </section>
+
+            <section id="hoa-qua-chau-au">
+                <h2>HOA QUẢ CHÂU ÂU</h2>
+                <p><a href="chi-tiet-san-pham.html?san-pham=tao-jazz">Táo Jazz</a></p>
+            </section>
+
+            <p><a href="bang-gia.html">XEM BẢNG GIÁ HOA QUẢ →</a></p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html">TRÁI CÂY THEO MÙA</a>
+        <p>NGUYỄN HỮU ĐOÀN - PH65018</p>
+        <a href="lien-he.html">Liên hệ với chúng tôi</a>
+    </footer>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Trái Cây Theo Mùa</title>
+    <link rel="stylesheet" href="/Lab3/lab3.css">
+</head>
+<body>
+
+<div class="website">
+
+    <header class="banner">
+        <a href="index.html">
+            <img src="/Lab3/image/banner.png" alt="Trái cây theo mùa">
+        </a>
+    </header>
+
+    <nav class="menu">
+        <a href="lab3.html">TRANG CHỦ</a>
+        <a href="gioi-thieu.html">GIỚI THIỆU</a>
+        <a href="hoa-qua.html">HOA QUẢ</a>
+        <a href="bang-gia.html">GIÁ HOA QUẢ</a>
+        <a href="lien-he.html">LIÊN HỆ</a>
+
+        <form action="hoa-qua.html" method="get" class="search">
+            <input type="search" name="tu-khoa"
+                   placeholder="Tìm kiếm hoa quả..."
+                   aria-label="Tìm kiếm hoa quả">
+            <button type="submit">TÌM KIẾM</button>
+        </form>
+    </nav>
+
+    <main class="content contact-page">
+
+        <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <p>Vui lòng điền thông tin bên dưới để gửi yêu cầu tư vấn.</p>
+
+        <div class="contact-information">
+            <h3>THÔNG TIN CỬA HÀNG</h3>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Số điện thoại: <a href="tel:0123456789">0123 456 789</a></p>
+            <p>Email: <a href="mailto:traicay@example.com">traicay@example.com</a></p>
+            <p><a href="lab3.html">← Quay về trang chủ</a></p>
+        </div>
+
+        <form class="contact-form" action="#" method="get">
+
+            <div class="form-group">
+                <label for="ho-ten">Họ và tên *</label>
+                <input type="text" id="ho-ten" name="ho-ten"
+                       placeholder="Nhập họ và tên" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Nhập địa chỉ email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dien-thoai">Số điện thoại</label>
+                <input type="tel" id="dien-thoai" name="dien-thoai"
+                       placeholder="Nhập số điện thoại">
+            </div>
+
+            <div class="form-group">
+                <label for="chu-de">Chủ đề</label>
+                <select id="chu-de" name="chu-de">
+                    <option value="tu-van">Tư vấn sản phẩm</option>
+                    <option value="bang-gia">Hỏi về bảng giá</option>
+                    <option value="giao-hang">Hỏi về giao hàng</option>
+                    <option value="khac">Nội dung khác</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="noi-dung">Nội dung cần hỗ trợ *</label>
+                <textarea id="noi-dung" name="noi-dung"
+                          rows="5" placeholder="Nhập nội dung..."
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="form-button">GỬI LIÊN HỆ</button>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <a href="lab3.html">TRÁI CÂY THEO MÙA</a>
+        <p>Nguyễn Hữu Đoàn - PH65018</p>
+        <a href="bang-gia.html">Xem bảng giá</a>
+    </footer>
+
+</div>
+</body>
+</html>
+
